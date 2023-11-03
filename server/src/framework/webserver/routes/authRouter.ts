@@ -5,5 +5,6 @@ const controller = authControl();
 
 // Define a route for user registration, mapped to the 'userSignup' function in the controller.
 authRouter.post("/register", controller.userSignup);
+ authRouter.post("/login",controller.userLogin)
 
 export default authRouter;
